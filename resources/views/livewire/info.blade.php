@@ -1,6 +1,6 @@
 <div>
-    <div class="bg-blue-100 min-h-screen w-1/3">
-        <div class="py-16 space-y-2 w-full px-10">
+    <div class="bg-blue-100 max-h-screen w-1/3">
+        <div class="py-14 space-y-2 w-full px-10">
             <div class="flex justify-center">
                 <img class="h-28 rounded-full w-28" src="{{ asset('assets/images/avatar.svg') }}" alt="">
             </div>
@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <div class="pb-4 pt-6 px-10 w-full">
+        <div class="py-4 px-10 w-full">
             <div class="text-right text-gray-500">
                 <p class="font-display text-xl">80%</p>
             </div>
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="pb-14 px-10 w-full">
+        <div class="pb-12 px-10 w-full">
             <div class="text-gray-500 pb-1">
                 <p class="font-display text-xl">Recent Activity</p>
             </div>
