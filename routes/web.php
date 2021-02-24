@@ -26,4 +26,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function() {
 
     Route::get('/info', Info::class);
 
+    Route::get('/home', function () {
+        return view('home');
+    })->name('home');
 });
