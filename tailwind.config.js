@@ -16,8 +16,20 @@ module.exports = {
             },
             colors: {
                 cyan: colors.cyan,
+                yellow: colors.yellow,
+                purple: colors.purple,
+                orange: colors.orange,
+                red: colors.red,
                 blue: colors.blue,
-                primary: '#0D47A1'
+                primary: '#0D47A1',
+                sidebarActive: '#FFF0A7',
+                custom: {
+                    gradient_blue_dark: '#0A367B',
+                    gradient_blue_light: '#0D47A1',
+                    gradient_violet_dark: '#6C63FF',
+                    gradient_violet_medium: '#7B72FF',
+                    gradient_violet_light: '#837BFF'
+                }
             }
         }
     },

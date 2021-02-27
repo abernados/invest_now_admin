@@ -1,167 +1,207 @@
 <x-default-layout>
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-lg leading-6 font-medium text-gray-900">Overview</h2>
-        <div class="mt-2 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            <!-- Card -->
-
-            <div class="bg-white overflow-hidden shadow rounded-lg">
-                <div class="p-5">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <!-- Heroicon name: outline/scale -->
-                            <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                            </svg>
-                        </div>
-                        <div class="ml-5 w-0 flex-1">
-                            <dl>
-                                <dt class="text-sm font-medium text-gray-500 truncate">
-                                    Account balance
-                                </dt>
-                                <dd>
-                                    <div class="text-lg font-medium text-gray-900">
-                                        $30,659.45
-                                    </div>
-                                </dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-gray-50 px-5 py-3">
-                    <div class="text-sm">
-                        <a href="#" class="font-medium text-cyan-700 hover:text-cyan-900">
-                            View all
-                        </a>
-                    </div>
+    <div class="max-w-6xl mx-auto">
+        <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-4">
+            <div class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_violet_dark via-custom-gradient_violet_medium to-custom-gradient_violet_light">
+                <div class="px-4 pt-2 sm:p-4">
+                    <dt class="text-md font-bold truncate pb-4">
+                        New Investors
+                    </dt>
+                    <dd class=" text-center mt-1 text-5xl">
+                        11,302
+                    </dd>
                 </div>
             </div>
+            <div class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light">
+                <div class="px-4 pt-2 sm:p-4">
+                    <dt class="text-md font-bold truncate pb-4">
+                        Amount Invested
+                    </dt>
+                    <dd class=" text-center mt-1 text-5xl">
+                        $239,391
+                    </dd>
+                    <dd class="text-green-500 text-center my-6 text-md">
+                        32%
+                    </dd>
+                    <dd class="grid grid-cols-2 mt-1 text-sm text-center">
+                        <div>
+                            <p class="text-lg">$550.62</p>
+                            <p>Average</p>
+                        </div>
+                        <div>
+                            <p class="text-lg">$550.62</p>
+                            <p>Medium</p>
+                        </div>
 
-            <!-- More items... -->
-        </div>
-    </div>
-
-    <h2 class="max-w-6xl mx-auto mt-8 px-4 text-lg leading-6 font-medium text-gray-900 sm:px-6 lg:px-8">
-        Recent activity
-    </h2>
-
-    <!-- Activity list (smallest breakopoint only) -->
-    <div class="shadow sm:hidden">
-        <ul class="mt-2 divide-y divide-gray-200 overflow-hidden shadow sm:hidden">
-            <li>
-                <a href="#" class="block px-4 py-4 bg-white hover:bg-gray-50">
-                    <span class="flex items-center space-x-4">
-                        <span class="flex-1 flex space-x-2 truncate">
-                            <!-- Heroicon name: solid/cash -->
-                            <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="flex flex-col text-gray-500 text-sm truncate">
-                                <span class="truncate">Payment to Molly Sanders</span>
-                                <span><span class="text-gray-900 font-medium">$20,000</span> USD</span>
-                                <span>July 11, 2020</span>
-                            </span>
-                        </span>
-                        <!-- Heroicon name: solid/chevron-right -->
-                        <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                        </svg>
-                    </span>
-                </a>
-            </li>
-
-            <!-- More items... -->
-        </ul>
-
-        <nav class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200" aria-label="Pagination">
-            <div class="flex-1 flex justify-between">
-                <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:text-gray-500">
-                    Previous
-                </a>
-                <a href="#" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:text-gray-500">
-                    Next
-                </a>
+                    </dd>
+                </div>
             </div>
-        </nav>
-    </div>
-
-    <!-- Activity table (small breakopoint and up) -->
-    <div class="hidden sm:block">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col mt-2">
-                <div class="align-middle min-w-full overflow-x-auto shadow overflow-hidden sm:rounded-lg">
-                    <table class="min-w-full divide-y divide-gray-200">
-                        <thead>
-                            <tr>
-                                <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Transaction
-                                </th>
-                                <th class="px-6 py-3 bg-gray-50 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Amount
-                                </th>
-                                <th class="hidden px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider md:block">
-                                    Status
-                                </th>
-                                <th class="px-6 py-3 bg-gray-50 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Date
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="bg-white divide-y divide-gray-200">
-                            <tr class="bg-white">
-                                <td class="max-w-0 w-full px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                    <div class="flex">
-                                        <a href="#" class="group inline-flex space-x-2 truncate text-sm">
-                                            <!-- Heroicon name: solid/cash -->
-                                            <svg class="flex-shrink-0 h-5 w-5 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                                <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
-                                            </svg>
-                                            <p class="text-gray-500 truncate group-hover:text-gray-900">
-                                                Payment to Molly Sanders
-                                            </p>
-                                        </a>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4 text-right whitespace-nowrap text-sm text-gray-500">
-                                    <span class="text-gray-900 font-medium">$20,000 </span>
-                                    USD
-                                </td>
-                                <td class="hidden px-6 py-4 whitespace-nowrap text-sm text-gray-500 md:block">
-                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 capitalize">
-                                        success
-                                    </span>
-                                </td>
-                                <td class="px-6 py-4 text-right whitespace-nowrap text-sm text-gray-500">
-                                    July 11, 2020
-                                </td>
-                            </tr>
-
-                            <!-- More items... -->
-                        </tbody>
-                    </table>
-                    <!-- Pagination -->
-                    <nav class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6" aria-label="Pagination">
-                        <div class="hidden sm:block">
-                            <p class="text-sm text-gray-700">
-                                Showing
-                                <span class="font-medium">1</span>
-                                to
-                                <span class="font-medium">10</span>
-                                of
-                                <span class="font-medium">20</span>
-                                results
+            <div class="bg-white overflow-hidden shadow rounded text-center text-gray-5 00">
+                <div class="px-4 py-2 sm:p-4">
+                    <div class="divide-y divide-gray-200">
+                        <dt class="text-md font-bold truncate">
+                            Completed Investments
+                            <p class="my-4 text-5xl font-semibold ">
+                                504
                             </p>
-                        </div>
-                        <div class="flex-1 flex justify-between sm:justify-end">
-                            <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
-                                Previous
-                            </a>
-                            <a href="#" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
-                                Next
-                            </a>
-                        </div>
-                    </nav>
+                        </dt>
+                        <dt class="text-md font-bold truncate pt-4">
+                            Pending Investments
+                            <p class="my-4 text-5xl font-semibold ">
+                                32
+                            </p>
+                        </dt>
+
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div class="bg-white overflow-hidden shadow rounded row-span-4">
+                <div class="px-4 py-2 sm:p-4">
+                    <dt class="text-md font-bold text-gray-500 truncate">
+                        Recent Activity
+                    </dt>
+                    <dd class="mt-1 text-3xl font-semibold text-gray-900">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                @foreach([1,2] as $test)
+                                <tr class="activity-item hover:bg-gray-100">
+                                    <td class="py-4 whitespace-nowrap ">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-10 w-10">
+                                                <img class="h-10 w-10" src="/images/document.png" alt="">
+                                            </div>
+                                            <div class="ml-4">
+                                                <div class="text-sm font-medium text-gray-900">
+                                                    Uploaded Document
+                                                </div>
+                                                <div class="text-sm text-gray-500">
+                                                    4 mins ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="activity-item hover:bg-gray-100">
+                                    <td class="py-4 whitespace-nowrap ">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-10 w-10">
+                                                <img class="h-10 w-10" src="/images/email.png" alt="">
+                                            </div>
+                                            <div class="ml-4">
+                                                <div class="text-sm font-medium text-gray-900">
+                                                    Opened Email
+                                                </div>
+                                                <div class="text-sm text-gray-500">
+                                                    4 mins ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                @endforeach
+
+                            </tbody>
+                        </table>
+                    </dd>
+                </div>
+            </div>
+
+            <div class="bg-white overflow-hidden shadow rounded h-52">
+                <div class="px-4 py-2 sm:p-4">
+                    <dt class="text-md font-bold text-gray-500 truncate">
+                        KYC/AML
+                    </dt>
+                    <dd class="mt-1 text-3xl font-semibold text-gray-900">
+                    </dd>
+                </div>
+            </div>
+            <div class="bg-white overflow-hidden shadow rounded col-span-2 row-span-3">
+                <div class=" py-5 sm:p-6">
+                    <dt class="text-md font-bold text-gray-500 truncate">
+                        New Investors
+                    </dt>
+                    <dd class="mt-2">
+                        <table class="divide-y divide-gray-200">
+                            <thead class="font-bold text-lg">
+                                <tr>
+                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
+                                        Date/Time
+                                    </th>
+                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
+                                        Investor
+                                    </th>
+                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
+                                        Amount
+                                    </th>
+                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
+                                        Status
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                @foreach([1,2,3,4,5,3,1] as $val)
+                                <tr>
+                                    <td class="p-3 px-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                        12/15/2020 @ 12:41 PM
+                                    </td>
+                                    <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
+                                        Angel Rose Bernados
+                                    </td>
+                                    <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
+                                        $3,982
+                                    </td>
+                                    <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
+                                        {{-- <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-200 text-green-800">Paid</span> --}}
+                                        {{-- <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-orange-200 text-orange-800">Pending</span> --}}
+                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-red-200 text-red-800">Failed</span>
+                                    </td>
+                                </tr>
+                                @endforeach
+
+                            </tbody>
+                        </table>
+                    </dd>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light text-white overflow-hidden shadow rounded">
+                <div class="px-4 py-2 sm:p-4">
+                    <dd class="mt-1 ">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 w-14">
+                                <img class="w-14" src="/images/successful-kyc.png" alt="">
+                            </div>
+                            <div class="ml-4 w-full">
+                                <div class="text-sm font-medium">
+                                    Successfull KYC
+                                </div>
+                                <div class="text-sm border-b-4 border-green-500 pb-1">
+                                    Compliance Check
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light text-white overflow-hidden shadow rounded">
+                <div class="px-4 py-2 sm:p-4">
+                    <dd class="mt-1 ">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 w-14">
+                                <img class="w-14" src="/images/failed-kyc.png" alt="">
+                            </div>
+                            <div class="ml-4 w-full">
+                                <div class="text-sm font-medium">
+                                    Failed KYC
+                                </div>
+                                <div class="text-sm border-b-4 border-red-500 pb-1">
+                                    Compliance Check
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </div>
+            </div>
+        </dl>
     </div>
+
 </x-default-layout>
