@@ -17,15 +17,25 @@ module.exports = {
             },
             colors: {
                 cyan: colors.cyan,
+                yellow: colors.yellow,
+                purple: colors.purple,
+                orange: colors.orange,
+                red: colors.red,
                 blue: colors.blue,
                 primary: '#0D47A1'
             },
             spacing: {
-                '72': '18rem',
-                '84': '21rem',
-                '96': '24rem',
                 '108': '27rem'
             },
+            primary: '#0D47A1',
+            sidebarActive: '#FFF0A7',
+            custom: {
+                gradient_blue_dark: '#0A367B',
+                gradient_blue_light: '#0D47A1',
+                gradient_violet_dark: '#6C63FF',
+                gradient_violet_medium: '#7B72FF',
+                gradient_violet_light: '#837BFF'
+            }
         }
     },
 
@@ -35,5 +45,5 @@ module.exports = {
         }
     },
 
-    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]
 };

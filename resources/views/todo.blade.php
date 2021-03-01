@@ -4,64 +4,61 @@
             <div class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_violet_dark via-custom-gradient_violet_medium to-custom-gradient_violet_light">
                 <div class="px-4 pt-2 sm:p-4">
                     <dt class="text-md font-bold truncate pb-4">
-                        New Investors
+                        Follow up Tasks
                     </dt>
                     <dd class=" text-center mt-1 text-5xl">
-                        11,302
+                        142
                     </dd>
                 </div>
             </div>
             <div class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light">
                 <div class="px-4 pt-2 sm:p-4">
                     <dt class="text-md font-bold truncate pb-4">
-                        Amount Invested
+                        Success rate
                     </dt>
                     <dd class=" text-center mt-1 text-5xl">
-                        $239,391
+                        87%
                     </dd>
                     <dd class="text-green-500 text-center my-6 text-md">
+                        {{-- <svg class="self-center flex-shrink-0 h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">
+                            Increased by
+                        </span> --}}
                         32%
-                    </dd>
-                    <dd class="grid grid-cols-2 mt-1 text-sm text-center">
-                        <div>
-                            <p class="text-lg">$550.62</p>
-                            <p>Average</p>
-                        </div>
-                        <div>
-                            <p class="text-lg">$550.62</p>
-                            <p>Medium</p>
-                        </div>
-
                     </dd>
                 </div>
             </div>
-            <div class="bg-white overflow-hidden shadow rounded text-center text-gray-5 00">
+            <div class="bg-white overflow-hidden shadow rounded text-center text-gray-500">
                 <div class="px-4 py-2 sm:p-4">
                     <div class="divide-y divide-gray-200">
                         <dt class="text-md font-bold truncate">
-                            Completed Investments
+                            Follow Up Queue
                             <p class="my-4 text-5xl font-semibold ">
-                                504
+                                51
                             </p>
                         </dt>
                         <dt class="text-md font-bold truncate pt-4">
-                            Pending Investments
-                            <p class="my-4 text-5xl font-semibold ">
-                                32
+                            <p class="my-4 text-5xl font-extralight text-gray-300">
+                                51/142
                             </p>
+                            <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-gradient-to-b from-custom-gradient_violet_dark via-custom-gradient_violet_medium to-custom-gradient_violet_light hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-400">
+                                Start Queue
+                            </button>
                         </dt>
 
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white overflow-hidden shadow rounded row-span-4">
+            <div class="bg-white overflow-hidden shadow rounded row-span-2">
                 <div class="px-4 py-2 sm:p-4">
                     <dt class="text-md font-bold text-gray-500 truncate">
-                        Recent Activity
+                        Follow Up Queue
                     </dt>
-                    <dd class="mt-1 text-3xl font-semibold text-gray-900">
-                        <table class="min-w-full divide-y divide-gray-200">
+                    <dd class="mt-1  text-gray-900">
+                        {{-- <table class="min-w-full divide-y divide-gray-200 text-3xl font-semibold">
                             <tbody class="bg-white divide-y divide-gray-200">
                                 @foreach([1,2] as $test)
                                 <tr class="activity-item hover:bg-gray-100">
@@ -72,10 +69,10 @@
                                             </div>
                                             <div class="ml-4">
                                                 <div class="text-sm font-medium text-gray-900">
-                                                    Uploaded Document
+                                                    KYC Not Complete
                                                 </div>
                                                 <div class="text-sm text-gray-500">
-                                                    4 mins ago
+                                                    Benjamin Taos | 4 mins ago
                                                 </div>
                                             </div>
                                         </div>
@@ -89,49 +86,53 @@
                                             </div>
                                             <div class="ml-4">
                                                 <div class="text-sm font-medium text-gray-900">
-                                                    Opened Email
+                                                    Missing Signature
                                                 </div>
                                                 <div class="text-sm text-gray-500">
-                                                    4 mins ago
+                                                    Benjamin Taos | 4 mins ago
                                                 </div>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                                 @endforeach
-
+                                <tr class="activity-item">
+                                    <td class="text-center">
+                                        <a href="#" class="text-xs text-purple-600">Load More Tasks</a>
+                                    </td>
+                                </tr>
                             </tbody>
-                        </table>
+                        </table> --}}
+                        {{-- if wala pa --}}
+                        <div class="text-purple-700">
+                            <img src="images/no-queue.svg" class="h-52 mx-auto">
+                            <p class="text-center p-4">No Records on Queue.</p>
+                        </div>
                     </dd>
                 </div>
             </div>
 
-            <div class="bg-white overflow-hidden shadow rounded h-52">
-                <div class="px-4 py-2 sm:p-4">
-                    <dt class="text-md font-bold text-gray-500 truncate">
-                        KYC/AML
-                    </dt>
-                    <dd class="mt-1 text-3xl font-semibold text-gray-900">
-                    </dd>
-                </div>
-            </div>
-            <div class="bg-white overflow-hidden shadow rounded col-span-2 row-span-3">
+            <div class="bg-white overflow-hidden shadow rounded col-span-3">
                 <div class=" py-5 sm:p-6">
                     <dt class="text-md font-bold text-gray-500 truncate">
-                        New Investors
+                        Follow Up Tasks
                     </dt>
                     <dd class="mt-2">
-                        <table class="divide-y divide-gray-200">
+                        {{-- if may data --}}
+                        {{-- <table class="divide-y divide-gray-200 w-full">
                             <thead class="font-bold text-lg">
                                 <tr>
                                     <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
-                                        Date/Time
+                                        New Activity
                                     </th>
                                     <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
                                         Investor
                                     </th>
                                     <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
-                                        Amount
+                                        Action
+                                    </th>
+                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
+                                        Application Progress
                                     </th>
                                     <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
                                         Status
@@ -148,55 +149,24 @@
                                         Angel Rose Bernados
                                     </td>
                                     <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
-                                        $3,982
+                                        Missing Info
                                     </td>
                                     <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
-                                        {{-- <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-200 text-green-800">Paid</span> --}}
-                                        {{-- <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-orange-200 text-orange-800">Pending</span> --}}
-                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-red-200 text-red-800">Failed</span>
+                                        <button></button>
+                                    </td>
+                                    <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
+                                        <input type="checkbox" name="status" checked>
                                     </td>
                                 </tr>
                                 @endforeach
 
                             </tbody>
-                        </table>
-                    </dd>
-                </div>
-            </div>
-            <div class="bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light text-white overflow-hidden shadow rounded">
-                <div class="px-4 py-2 sm:p-4">
-                    <dd class="mt-1 ">
-                        <div class="flex items-center">
-                            <div class="flex-shrink-0 w-14">
-                                <img class="w-14" src="/images/successful-kyc.png" alt="">
-                            </div>
-                            <div class="ml-4 w-full">
-                                <div class="text-sm font-medium">
-                                    Successfull KYC
-                                </div>
-                                <div class="text-sm border-b-4 border-green-500 pb-1">
-                                    Compliance Check
-                                </div>
-                            </div>
-                        </div>
-                    </dd>
-                </div>
-            </div>
-            <div class="bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light text-white overflow-hidden shadow rounded">
-                <div class="px-4 py-2 sm:p-4">
-                    <dd class="mt-1 ">
-                        <div class="flex items-center">
-                            <div class="flex-shrink-0 w-14">
-                                <img class="w-14" src="/images/failed-kyc.png" alt="">
-                            </div>
-                            <div class="ml-4 w-full">
-                                <div class="text-sm font-medium">
-                                    Failed KYC
-                                </div>
-                                <div class="text-sm border-b-4 border-red-500 pb-1">
-                                    Compliance Check
-                                </div>
-                            </div>
+                        </table> --}}
+
+                        {{-- if wala pa --}}
+                        <div class="text-purple-700">
+                            <img src="images/no-tasks.svg" class="h-52 mx-auto">
+                            <p class="text-center p-4">You're all caught up!'</p>
                         </div>
                     </dd>
                 </div>
