@@ -1,11 +1,12 @@
 <x-default-layout>
     <div class="h-screen flex overflow-hidden bg-white">
-        <div class="hidden md:flex md:flex-shrink-0">
+        <!-- <div class="hidden md:flex md:flex-shrink-0">
             <div class="flex flex-col w-108">
                 <livewire:info />
             </div>
-        </div>
-        <div class="flex flex-col w-0 flex-1 overflow-hidden">
+        </div> -->
+        
+        <!-- <div class="flex flex-col w-0 flex-1 overflow-hidden">
             <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none" tabindex="0">
                 <div class="py-6">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,9 +29,9 @@
                                         </a>
                                         <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
                                             Investment
-                                        </a>
+                                        </a> -->
                                         <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
-                                        <a href="#" class="border-transparent text-gray-500 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                                        <!-- <a href="#" class="border-transparent text-gray-500 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
                                             Payment
                                         </a>
                                         <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
@@ -45,9 +46,9 @@
                         </div>
 
                     </div>
-                    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8"> -->
                         <!-- Replace with your content -->
-                        <div class="py-4">
+                        <!-- <div class="py-4">
                             <div class="bg-white shadow sm:rounded-md">
                                 <div class="px-4 py-5 sm:p-6">
                                     <div class="sm:flex sm:justify-between">
@@ -74,52 +75,52 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="py-10">
-  <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
-    <div class="bg-white overflow-hidden shadow rounded-lg">
-      <div class="px-4 py-5 sm:p-6">
-        <dt class="text-sm font-medium text-gray-500 truncate font-display">
-          Investment Steps
-        </dt>
-        <dd class="mt-1 text-3xl font-semibold text-gray-900">
-          80%
-        </dd>
-      </div>
-    </div>
+                            <!-- <div class="py-10">
+                                <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
+                                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                                        <div class="px-4 py-5 sm:p-6">
+                                            <dt class="text-sm font-medium text-gray-500 truncate font-display">
+                                                Investment Steps
+                                            </dt>
+                                            <dd class="mt-1 text-3xl font-semibold text-gray-900">
+                                                80%
+                                            </dd>
+                                        </div>
+                                    </div>
 
-    <div class="bg-white overflow-hidden shadow rounded-lg">
-      <div class="px-4 py-5 sm:p-6">
-        <dt class="text-sm font-medium text-gray-500 truncate">
-          Avg. Open Rate
-        </dt>
-        <dd class="mt-1 text-3xl font-semibold text-gray-900">
-          58.16%
-        </dd>
-      </div>
-    </div>
+                                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                                        <div class="px-4 py-5 sm:p-6">
+                                            <dt class="text-sm font-medium text-gray-500 truncate">
+                                                Avg. Open Rate
+                                            </dt>
+                                            <dd class="mt-1 text-3xl font-semibold text-gray-900">
+                                                58.16%
+                                            </dd>
+                                        </div>
+                                    </div>
 
-    <div class="bg-white overflow-hidden shadow rounded-lg">
-      <div class="px-4 py-5 sm:p-6">
-        <dt class="text-sm font-medium text-gray-500 truncate">
-          Avg. Click Rate
-        </dt>
-        <dd class="mt-1 text-3xl font-semibold text-gray-900">
-          24.57%
-        </dd>
-      </div>
-    </div>
-  </dl>
-</div>
+                                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                                        <div class="px-4 py-5 sm:p-6">
+                                            <dt class="text-sm font-medium text-gray-500 truncate">
+                                                Avg. Click Rate
+                                            </dt>
+                                            <dd class="mt-1 text-3xl font-semibold text-gray-900">
+                                                24.57%
+                                            </dd>
+                                        </div>
+                                    </div>
+                                </dl>
+                            </div> 
 
-                        </div>
+                        </div>-->
                         <!-- /End replace -->
-                    </div>
+                    <!-- </div>
                 </div>
             </main>
-        </div>
+        </div> -->
     </div>
 
 </x-default-layout>

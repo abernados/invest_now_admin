@@ -8,6 +8,10 @@ class DefaultLayout extends Component
 {
     public function render()
     {
-        return view('layouts.default');
+        $showInfo = false;
+
+        if (basename(url()->current()) === 'home') $showInfo = true;
+
+        return view('layouts.default', ['showInfo' => $showInfo]);
     }
 }
