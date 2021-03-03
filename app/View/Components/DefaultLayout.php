@@ -10,7 +10,7 @@ class DefaultLayout extends Component
     {
         $showInfo = false;
 
-        if (basename(url()->current()) === 'home') $showInfo = true;
+        if (basename(url()->current()) === 'investors') $showInfo = true;
 
         return view('layouts.default', ['showInfo' => $showInfo]);
     }

@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Livewire\Info;
+use App\Http\Controllers\InvestorController;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Support\Facades\Route;
 
@@ -24,9 +24,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function() {
         return view('index');
     })->name('dashboard');
 
-    Route::get('/home', function () {
-        return view('home');
-    })->name('home');
+    Route::get('/investors', [InvestorController::class, 'show']);
 
     Route::get('/todo', function () {
         return view('todo');
