@@ -266,7 +266,7 @@
 
         <!-- info component -->
         @if($showInfo)
-        <livewire:info />
+        <livewire:show-info />
         @endif
 
         <div class="flex-1 overflow-auto focus:outline-none" tabindex="0">
