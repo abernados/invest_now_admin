@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class ShowInvestor extends Component
 {
-    public $tab = 2;
+    public $tab = 1;
 
     public function render()
     {

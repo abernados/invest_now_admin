@@ -90,7 +90,7 @@
     <div class="pt-10">
         <div class="bg-white overflow-hidden shadow rounded col-span-2 row-span-3">
             <div class=" py-5 sm:p-6">
-                <dt class="text-md font-display text-gray-500 truncate">
+                <dt class="text-md font-display text-gray-600 truncate">
                     KYC Verification Snapshot
                 </dt>
                 <dd class="mt-2">
