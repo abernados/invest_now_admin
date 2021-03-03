@@ -30,5 +30,8 @@
 
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import 'tailwindcss/base';
+// components and objects
 @import 'tailwindcss/components';
+@import '../css/components/c-tabs.css';
+@import '../css/components/c-input.css';
 @import 'tailwindcss/utilities';
