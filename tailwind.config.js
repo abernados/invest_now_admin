@@ -15,6 +15,9 @@ module.exports = {
                 display: ['Rockwell'],
                 body: ["'Segoe UI'"]
             },
+            fontSize: {
+                'xxs': '.5rem'
+            },
             colors: {
                 cyan: colors.cyan,
                 yellow: colors.yellow,

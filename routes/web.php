@@ -24,8 +24,6 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function() {
         return view('index');
     })->name('dashboard');
 
-    Route::get('/info', Info::class);
-
     Route::get('/home', function () {
         return view('home');
     })->name('home');
