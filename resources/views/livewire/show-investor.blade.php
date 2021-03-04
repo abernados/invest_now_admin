@@ -70,6 +70,8 @@
             <livewire:investment-tab />
             @elseif($tab === 3)
             <livewire:payment-tab />
+            @elseif($tab === 4)
+            <livewire:compliance-tab />
             @endif
         </div>
     </div>
