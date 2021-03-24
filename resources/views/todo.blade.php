@@ -1,13 +1,41 @@
 <x-default-layout>
     <div class="max-w-6xl mx-auto">
-        <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-4">
+        <dl class="m-10 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-4">
             <div class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_violet_dark via-custom-gradient_violet_medium to-custom-gradient_violet_light">
                 <div class="px-4 pt-2 sm:p-4">
                     <dt class="text-md font-bold truncate pb-4">
                         Follow up Tasks
                     </dt>
-                    <dd class=" text-center mt-1 text-5xl">
-                        142
+                    <dd class=" text-center mt-2 text-5xl">
+                        0
+                    </dd>
+                    <dd class="flex items-baseline pt-10 pb-0.5">
+                        <div class="flex-initial text-xxs mr-0.5">Email</div>
+                        <div class="bg-purple-500 flex flex-auto h-1.5 mb-2 overflow-hidden rounded text-xs">
+                            <div style="width:100%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-200 border-white border-solid border rounded"></div>
+                        </div>
+                        <div class="flex-initial text-xxs ml-0.5">42</div>
+                    </dd>
+                    <dd class="flex items-baseline pt-2 pb-0.5">
+                        <div class="flex-initial text-xxs mr-0.5">Call</div>
+                        <div class="bg-purple-500 flex flex-auto h-1.5 mb-2 overflow-hidden rounded text-xs">
+                            <div style="width:100%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-200 border-white border-solid border rounded"></div>
+                        </div>
+                        <div class="flex-initial text-xxs ml-0.5">13</div>
+                    </dd>
+                    <dd class="flex items-baseline pt-2 pb-0.5">
+                        <div class="flex-initial text-xxs mr-0.5">Re-enroll</div>
+                        <div class="bg-purple-500 flex flex-auto h-1.5 mb-2 overflow-hidden rounded text-xs">
+                            <div style="width:100%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-200 border-white border-solid border rounded"></div>
+                        </div>
+                        <div class="flex-initial text-xxs ml-0.5">81</div>
+                    </dd>
+                    <dd class="flex items-baseline pt-2 pb-0.5">
+                        <div class="flex-initial text-xxs mr-0.5">Missing Info</div>
+                        <div class="bg-yellow-500 flex flex-auto h-1.5 mb-2 overflow-hidden rounded text-xs">
+                            <div style="width:100%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-200 border-white border-solid border rounded"></div>
+                        </div>
+                        <div class="flex-initial text-xxs ml-0.5">11</div>
                     </dd>
                 </div>
             </div>
@@ -19,14 +47,14 @@
                     <dd class=" text-center mt-1 text-5xl">
                         87%
                     </dd>
-                    <dd class="text-green-500 text-center my-6 text-md">
-                        {{-- <svg class="self-center flex-shrink-0 h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <dd class="text-green-500 justify-center  mt-6 text-md flex">
+                        <svg class="self-center h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                             <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                         </svg>
-                        <span class="sr-only">
-                            Increased by
-                        </span> --}}
-                        32%
+                        <span>32%</span>
+                    </dd>
+                    <dd class="flex flex-auto mt-20 h-1.5">
+                        <div style="width:100%" class="c-progress-bar v--rainbow shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center"></div>
                     </dd>
                 </div>
             </div>
@@ -36,12 +64,12 @@
                         <dt class="text-md font-bold truncate">
                             Follow Up Queue
                             <p class="my-4 text-5xl font-semibold ">
-                                51
+                                0
                             </p>
                         </dt>
                         <dt class="text-md font-bold truncate pt-4">
                             <p class="my-4 text-5xl font-extralight text-gray-300">
-                                51/142
+                                142/142
                             </p>
                             <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-gradient-to-b from-custom-gradient_violet_dark via-custom-gradient_violet_medium to-custom-gradient_violet_light hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-400">
                                 Start Queue
@@ -57,7 +85,7 @@
                     <dt class="text-md font-bold text-gray-500 truncate">
                         Follow Up Queue
                     </dt>
-                    <dd class="mt-1  text-gray-900">
+                    <dd class="mt-1 text-gray-900">
                         {{-- <table class="min-w-full divide-y divide-gray-200 text-3xl font-semibold">
                             <tbody class="bg-white divide-y divide-gray-200">
                                 @foreach([1,2] as $test)
@@ -104,7 +132,7 @@
                             </tbody>
                         </table> --}}
                         {{-- if wala pa --}}
-                        <div class="text-purple-700">
+                        <div class="text-purple-700 my-48">
                             <img src="images/no-queue.svg" class="h-52 mx-auto">
                             <p class="text-center p-4">No Records on Queue.</p>
                         </div>
@@ -117,9 +145,9 @@
                     <dt class="text-md font-bold text-gray-500 truncate">
                         Follow Up Tasks
                     </dt>
-                    <dd class="mt-2">
+                    <dd class="my-10">
                         {{-- if may data --}}
-                        {{-- <table class="divide-y divide-gray-200 w-full">
+                        <table class="divide-y divide-gray-200 w-full">
                             <thead class="font-bold text-lg">
                                 <tr>
                                     <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
@@ -142,17 +170,24 @@
                             <tbody class="bg-white divide-y divide-gray-200">
                                 @foreach([1,2,3,4,5,3,1] as $val)
                                 <tr>
-                                    <td class="p-3 px-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                        12/15/2020 @ 12:41 PM
+                                    <td class="p-3 px-4 whitespace-nowrap text-sm font-medium text-gray-500">
+                                        {{ now()->format('m/d/Y @ H:m A') }}
                                     </td>
                                     <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
-                                        Angel Rose Bernados
+                                        <a href="/investor/1">Benjamin Bit</a>
                                     </td>
                                     <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
                                         Missing Info
                                     </td>
                                     <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
-                                        <button></button>
+                                        <div class="flex items-baseline pb-0.5">
+                                            <div class="bg-gray-200 flex flex-auto h-1.5 mb-2 overflow-hidden rounded text-xs">
+                                                <div style="width:80%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-200 border-green-500 border-solid border rounded"></div> <!-- Email -->
+                                                {{-- <div style="width:80%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-yellow-200 border-yellow-500 border-solid border rounded"></div> <!-- Missing Info -->
+                                                <div style="width:80%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-200 border-red-500 border-solid border rounded"></div> --}} <!-- Call -->
+                                            </div>
+                                            <div class="flex-initial text-xxs ml-0.5">42</div>
+                                        </div>
                                     </td>
                                     <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
                                         <input type="checkbox" name="status" checked>
@@ -161,13 +196,13 @@
                                 @endforeach
 
                             </tbody>
-                        </table> --}}
+                        </table>
 
                         {{-- if wala pa --}}
-                        <div class="text-purple-700">
+                        {{-- <div class="text-purple-700">
                             <img src="images/no-tasks.svg" class="h-52 mx-auto">
                             <p class="text-center p-4">You're all caught up!'</p>
-                        </div>
+                        </div> --}}
                     </dd>
                 </div>
             </div>

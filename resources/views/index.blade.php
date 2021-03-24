@@ -1,6 +1,6 @@
 <x-default-layout>
     <div class="max-w-6xl mx-auto">
-        <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-4">
+        <dl class="m-10 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-4">
             <div class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_violet_dark via-custom-gradient_violet_medium to-custom-gradient_violet_light">
                 <div class="px-4 pt-2 sm:p-4">
                     <dt class="text-md font-bold truncate pb-4">
@@ -145,7 +145,7 @@
                                         12/15/2020 @ 12:41 PM
                                     </td>
                                     <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
-                                        Angel Rose Bernados
+                                        <a href="/investor/1">Benjamin Bit</a>
                                     </td>
                                     <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
                                         $3,982

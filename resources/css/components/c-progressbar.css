@@ -1,0 +1,6 @@
+.c-progress-bar.v--rainbow{
+    background: transparent linear-gradient(90deg, var(--unnamed-color-ff4040) 0%, #F6FF00 48%, var(---1cc16f) 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #FF4040 0%, #F6FF00 48%, #1CC16F 100%) 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    opacity: 1;
+}

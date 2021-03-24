@@ -24,9 +24,30 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function() {
         return view('index');
     })->name('dashboard');
 
-    Route::get('/investors', [InvestorController::class, 'show']);
+    Route::get('/investor/{id}', [InvestorController::class, 'show']);
 
     Route::get('/todo', function () {
         return view('todo');
     })->name('todo');
+
+    Route::get('/basic-information', function () {
+        return view('basic-information');
+    })->name('basic-information');
+
+    Route::get('/investment-details', function () {
+        return view('investment-details');
+    })->name('investment-details');
+
+    Route::get('/payment-information', function () {
+        return view('payment-information');
+    })->name('payment-information');
+
+    Route::get('/kyc-aml-verification', function () {
+        return view('kyc-aml-verification');
+    })->name('kyc-aml-verification');
+
+    Route::get('/audit-trail', function () {
+        return view('audit-trail');
+    })->name('audit-trail');
+
 });
