@@ -25,7 +25,7 @@
                     <a href="/investor/1">{{ $investor->first_name . ' ' . $investor->last_name }}</a>
                 </td>
                 <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
-                    $ {{ number_format($investor->investmentValues->amount, 2) }}
+                    $ {{ number_format($investor->investmentValues->amount ?? 0, 2) }}
                 </td>
                 <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
                     {{-- <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-200 text-green-800">Paid</span> --}}
