@@ -1,7 +1,8 @@
 <x-default-layout>
     <div class="max-w-6xl mx-auto">
         <dl class="m-10 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-4">
-            <div class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_violet_dark via-custom-gradient_violet_medium to-custom-gradient_violet_light">
+            <div
+                class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_violet_dark via-custom-gradient_violet_medium to-custom-gradient_violet_light">
                 <div class="px-4 pt-2 sm:p-4">
                     <dt class="text-md font-bold truncate pb-4">
                         New Investors
@@ -11,7 +12,8 @@
                     </dd>
                 </div>
             </div>
-            <div class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light">
+            <div
+                class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light">
                 <div class="px-4 pt-2 sm:p-4">
                     <dt class="text-md font-bold truncate pb-4">
                         Amount Invested
@@ -63,41 +65,41 @@
                     <dd class="mt-1 text-3xl font-semibold text-gray-900">
                         <table class="min-w-full divide-y divide-gray-200">
                             <tbody class="bg-white divide-y divide-gray-200">
-                                @foreach([1,2] as $test)
-                                <tr class="activity-item hover:bg-gray-100">
-                                    <td class="py-4 whitespace-nowrap ">
-                                        <div class="flex items-center">
-                                            <div class="flex-shrink-0 h-10 w-10">
-                                                <img class="h-10 w-10" src="/images/document.png" alt="">
-                                            </div>
-                                            <div class="ml-4">
-                                                <div class="text-sm font-medium text-gray-900">
-                                                    Uploaded Document
+                                @foreach ([1, 2] as $test)
+                                    <tr class="activity-item hover:bg-gray-100">
+                                        <td class="py-4 whitespace-nowrap ">
+                                            <div class="flex items-center">
+                                                <div class="flex-shrink-0 h-10 w-10">
+                                                    <img class="h-10 w-10" src="/images/document.png" alt="">
                                                 </div>
-                                                <div class="text-sm text-gray-500">
-                                                    4 mins ago
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="activity-item hover:bg-gray-100">
-                                    <td class="py-4 whitespace-nowrap ">
-                                        <div class="flex items-center">
-                                            <div class="flex-shrink-0 h-10 w-10">
-                                                <img class="h-10 w-10" src="/images/email.png" alt="">
-                                            </div>
-                                            <div class="ml-4">
-                                                <div class="text-sm font-medium text-gray-900">
-                                                    Opened Email
-                                                </div>
-                                                <div class="text-sm text-gray-500">
-                                                    4 mins ago
+                                                <div class="ml-4">
+                                                    <div class="text-sm font-medium text-gray-900">
+                                                        Uploaded Document
+                                                    </div>
+                                                    <div class="text-sm text-gray-500">
+                                                        4 mins ago
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
+                                        </td>
+                                    </tr>
+                                    <tr class="activity-item hover:bg-gray-100">
+                                        <td class="py-4 whitespace-nowrap ">
+                                            <div class="flex items-center">
+                                                <div class="flex-shrink-0 h-10 w-10">
+                                                    <img class="h-10 w-10" src="/images/email.png" alt="">
+                                                </div>
+                                                <div class="ml-4">
+                                                    <div class="text-sm font-medium text-gray-900">
+                                                        Opened Email
+                                                    </div>
+                                                    <div class="text-sm text-gray-500">
+                                                        4 mins ago
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 @endforeach
 
                             </tbody>
@@ -121,49 +123,12 @@
                         New Investors
                     </dt>
                     <dd class="mt-2">
-                        <table class="divide-y divide-gray-200">
-                            <thead class="font-bold text-lg">
-                                <tr>
-                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
-                                        Date/Time
-                                    </th>
-                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
-                                        Investor
-                                    </th>
-                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
-                                        Amount
-                                    </th>
-                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
-                                        Status
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody class="bg-white divide-y divide-gray-200">
-                                @foreach([1,2,3,4,5,3,1] as $val)
-                                <tr>
-                                    <td class="p-3 px-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                        12/15/2020 @ 12:41 PM
-                                    </td>
-                                    <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
-                                        <a href="/investor/1">Benjamin Bit</a>
-                                    </td>
-                                    <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
-                                        $3,982
-                                    </td>
-                                    <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
-                                        {{-- <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-200 text-green-800">Paid</span> --}}
-                                        {{-- <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-orange-200 text-orange-800">Pending</span> --}}
-                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-red-200 text-red-800">Failed</span>
-                                    </td>
-                                </tr>
-                                @endforeach
-
-                            </tbody>
-                        </table>
+                        <livewire:get-investors />
                     </dd>
                 </div>
             </div>
-            <div class="bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light text-white overflow-hidden shadow rounded">
+            <div
+                class="bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light text-white overflow-hidden shadow rounded">
                 <div class="px-4 py-2 sm:p-4">
                     <dd class="mt-1 ">
                         <div class="flex items-center">
@@ -182,7 +147,8 @@
                     </dd>
                 </div>
             </div>
-            <div class="bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light text-white overflow-hidden shadow rounded">
+            <div
+                class="bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light text-white overflow-hidden shadow rounded">
                 <div class="px-4 py-2 sm:p-4">
                     <dd class="mt-1 ">
                         <div class="flex items-center">

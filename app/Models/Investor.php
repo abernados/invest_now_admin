@@ -20,6 +20,8 @@ class Investor extends Model
         'is_accredited'
     ];
 
+    protected $dates = ['created_at'];
+    
     public function type()
     {
         return $this->belongsTo(InvestorType::class, 'investor_type_id');
