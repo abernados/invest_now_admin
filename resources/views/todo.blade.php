@@ -1,7 +1,8 @@
 <x-default-layout>
     <div class="max-w-6xl mx-auto">
         <dl class="m-10 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-4">
-            <div class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_violet_dark via-custom-gradient_violet_medium to-custom-gradient_violet_light">
+            <div
+                class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_violet_dark via-custom-gradient_violet_medium to-custom-gradient_violet_light">
                 <div class="px-4 pt-2 sm:p-4">
                     <dt class="text-md font-bold truncate pb-4">
                         Follow up Tasks
@@ -12,34 +13,43 @@
                     <dd class="flex items-baseline pt-10 pb-0.5">
                         <div class="flex-initial text-xxs mr-0.5">Email</div>
                         <div class="bg-purple-500 flex flex-auto h-1.5 mb-2 overflow-hidden rounded text-xs">
-                            <div style="width:100%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-200 border-white border-solid border rounded"></div>
+                            <div style="width:100%"
+                                class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-200 border-white border-solid border rounded">
+                            </div>
                         </div>
                         <div class="flex-initial text-xxs ml-0.5">42</div>
                     </dd>
                     <dd class="flex items-baseline pt-2 pb-0.5">
                         <div class="flex-initial text-xxs mr-0.5">Call</div>
                         <div class="bg-purple-500 flex flex-auto h-1.5 mb-2 overflow-hidden rounded text-xs">
-                            <div style="width:100%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-200 border-white border-solid border rounded"></div>
+                            <div style="width:100%"
+                                class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-200 border-white border-solid border rounded">
+                            </div>
                         </div>
                         <div class="flex-initial text-xxs ml-0.5">13</div>
                     </dd>
                     <dd class="flex items-baseline pt-2 pb-0.5">
                         <div class="flex-initial text-xxs mr-0.5">Re-enroll</div>
                         <div class="bg-purple-500 flex flex-auto h-1.5 mb-2 overflow-hidden rounded text-xs">
-                            <div style="width:100%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-200 border-white border-solid border rounded"></div>
+                            <div style="width:100%"
+                                class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-200 border-white border-solid border rounded">
+                            </div>
                         </div>
                         <div class="flex-initial text-xxs ml-0.5">81</div>
                     </dd>
                     <dd class="flex items-baseline pt-2 pb-0.5">
                         <div class="flex-initial text-xxs mr-0.5">Missing Info</div>
                         <div class="bg-yellow-500 flex flex-auto h-1.5 mb-2 overflow-hidden rounded text-xs">
-                            <div style="width:100%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-200 border-white border-solid border rounded"></div>
+                            <div style="width:100%"
+                                class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-200 border-white border-solid border rounded">
+                            </div>
                         </div>
                         <div class="flex-initial text-xxs ml-0.5">11</div>
                     </dd>
                 </div>
             </div>
-            <div class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light">
+            <div
+                class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light">
                 <div class="px-4 pt-2 sm:p-4">
                     <dt class="text-md font-bold truncate pb-4">
                         Success rate
@@ -48,13 +58,18 @@
                         87%
                     </dd>
                     <dd class="text-green-500 justify-center  mt-6 text-md flex">
-                        <svg class="self-center h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        <svg class="self-center h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
                         </svg>
                         <span>32%</span>
                     </dd>
                     <dd class="flex flex-auto mt-20 h-1.5">
-                        <div style="width:100%" class="c-progress-bar v--rainbow shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center"></div>
+                        <div style="width:100%"
+                            class="c-progress-bar v--rainbow shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center">
+                        </div>
                     </dd>
                 </div>
             </div>
@@ -71,7 +86,8 @@
                             <p class="my-4 text-5xl font-extralight text-gray-300">
                                 142/142
                             </p>
-                            <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-gradient-to-b from-custom-gradient_violet_dark via-custom-gradient_violet_medium to-custom-gradient_violet_light hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-400">
+                            <button type="button"
+                                class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-gradient-to-b from-custom-gradient_violet_dark via-custom-gradient_violet_medium to-custom-gradient_violet_light hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-400">
                                 Start Queue
                             </button>
                         </dt>
@@ -88,7 +104,7 @@
                     <dd class="mt-1 text-gray-900">
                         {{-- <table class="min-w-full divide-y divide-gray-200 text-3xl font-semibold">
                             <tbody class="bg-white divide-y divide-gray-200">
-                                @foreach([1,2] as $test)
+                                @foreach ([1, 2] as $test)
                                 <tr class="activity-item hover:bg-gray-100">
                                     <td class="py-4 whitespace-nowrap ">
                                         <div class="flex items-center">
@@ -147,56 +163,7 @@
                     </dt>
                     <dd class="my-10">
                         {{-- if may data --}}
-                        <table class="divide-y divide-gray-200 w-full">
-                            <thead class="font-bold text-lg">
-                                <tr>
-                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
-                                        New Activity
-                                    </th>
-                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
-                                        Investor
-                                    </th>
-                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
-                                        Action
-                                    </th>
-                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
-                                        Application Progress
-                                    </th>
-                                    <th scope="col" class="py-2 px-4 text-left text-xs font-bold text-gray-500 tracking-wider">
-                                        Status
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody class="bg-white divide-y divide-gray-200">
-                                @foreach([1,2,3,4,5,3,1] as $val)
-                                <tr>
-                                    <td class="p-3 px-4 whitespace-nowrap text-sm font-medium text-gray-500">
-                                        {{ now()->format('m/d/Y @ H:m A') }}
-                                    </td>
-                                    <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
-                                        <a href="/investor/1">Benjamin Bit</a>
-                                    </td>
-                                    <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
-                                        Missing Info
-                                    </td>
-                                    <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
-                                        <div class="flex items-baseline pb-0.5">
-                                            <div class="bg-gray-200 flex flex-auto h-1.5 mb-2 overflow-hidden rounded text-xs">
-                                                <div style="width:80%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-200 border-green-500 border-solid border rounded"></div> <!-- Email -->
-                                                {{-- <div style="width:80%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-yellow-200 border-yellow-500 border-solid border rounded"></div> <!-- Missing Info -->
-                                                <div style="width:80%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-200 border-red-500 border-solid border rounded"></div> --}} <!-- Call -->
-                                            </div>
-                                            <div class="flex-initial text-xxs ml-0.5">42</div>
-                                        </div>
-                                    </td>
-                                    <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
-                                        <input type="checkbox" name="status" checked>
-                                    </td>
-                                </tr>
-                                @endforeach
-
-                            </tbody>
-                        </table>
+                        <livewire:get-investors-todos />
 
                         {{-- if wala pa --}}
                         {{-- <div class="text-purple-700">

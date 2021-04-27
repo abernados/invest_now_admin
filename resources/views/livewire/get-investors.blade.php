@@ -19,7 +19,7 @@
         @foreach ($investors as $investor)
             <tr>
                 <td class="p-3 px-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                    {{ $investor->created_at->format('m/d/Y') }} {{ $investor->created_at->format('g:i A') }}
+                    {{ $investor->created_at->format('m/d/Y @ g:i A') }}
                 </td>
                 <td class="p-3 px-4 whitespace-nowrap text-sm text-gray-500">
                     <a href="/investor/1">{{ $investor->first_name . ' ' . $investor->last_name }}</a>
