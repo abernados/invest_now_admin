@@ -16,10 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return redirect()->route('dashboard');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->group(function() {
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/dashboard', function () {
         return view('index');
     })->name('dashboard');
@@ -49,5 +49,4 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function() {
     Route::get('/audit-trail', function () {
         return view('audit-trail');
     })->name('audit-trail');
-
 });
