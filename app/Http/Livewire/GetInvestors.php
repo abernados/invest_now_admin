@@ -10,9 +10,9 @@ class GetInvestors extends Component
     public $investors;
 
     public function mount()
-    {   
+    {
         $this->investors = $this->getInvestors();
-    } 
+    }
 
     public function getInvestors()
     {
@@ -21,6 +21,7 @@ class GetInvestors extends Component
 
     public function render()
     {
-        return view('livewire.get-investors');
+        return view('kyc-aml-verification')
+            ->layout('layouts.guest');
     }
 }
