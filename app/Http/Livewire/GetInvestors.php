@@ -7,11 +7,12 @@ use Livewire\Component;
 
 class GetInvestors extends Component
 {
-    public $investors;
+    public $investors, $investors_count;
 
     public function mount()
     {
         $this->investors = $this->getInvestors();
+        $this->investors_count = $this->getInvestorsCount();
     }
 
     public function getInvestors()
@@ -19,8 +20,13 @@ class GetInvestors extends Component
         return Investor::get();
     }
 
+    public function getInvestorsCount()
+    {
+        return Investor::get()->count();
+    }
+
     public function render()
     {
-        return view('kyc-aml-verification')->layout('layouts.guest');
+        return view('kyc-aml-verification')->layout('layouts.default');
     }
 }

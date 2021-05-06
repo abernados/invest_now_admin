@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\InvestorController;
 use App\Http\Livewire\GetInvestors;
+use App\Http\Livewire\PaymentInformation;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Support\Facades\Route;
 
@@ -39,9 +40,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         return view('investment-details');
     })->name('investment-details');
 
-    Route::get('/payment-information', function () {
-        return view('payment-information');
-    })->name('payment-information');
+    Route::get('/payment-information', PaymentInformation::class)->name('payment-information');
 
     Route::get('/kyc-aml-verification', GetInvestors::class)->name('kyc-aml-verification');
 

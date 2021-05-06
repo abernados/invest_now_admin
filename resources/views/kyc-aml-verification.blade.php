@@ -1,4 +1,4 @@
-<x-default-layout>
+<div>
     @section('page_title') KYC/AML Verification @endsection
     @section('page_description') Overview of most recent KYC & AML status.@endsection
 
@@ -44,7 +44,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="mr-3">
                                 <div class="text-white-75 small">KYC Pending</div>
-                                <div class="text-lg font-weight-bold">30</div>
+                                <div class="text-lg font-weight-bold">{{ $this->investors_count }}</div>
                             </div>
                             <i class="feather-xl text-white-50" data-feather="user-minus"></i>
                         </div>
@@ -61,7 +61,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="mr-3">
                                 <div class="text-white-75 small">AML Pending</div>
-                                <div class="text-lg font-weight-bold">30</div>
+                                <div class="text-lg font-weight-bold">{{ $this->investors_count }}</div>
                             </div>
                             <i class="feather-xl text-white-50" data-feather="loader"></i>
                         </div>
@@ -144,5 +144,4 @@
             </div>
         </div>
     </div>
-
-</x-default-layout>
+</div>

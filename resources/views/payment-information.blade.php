@@ -1,4 +1,4 @@
-<x-default-layout>
+<div>
     @section('page_title') Complete Investments @endsection
     @section('page_description') Below is an overview of all investors whos funds have been settled and are awaiting final review.@endsection
 
@@ -10,7 +10,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="mr-3">
                                 <div class="text-white-75 small">Payment Cleared</div>
-                                <div class="text-lg font-weight-bold">6</div>
+                                <div class="text-lg font-weight-bold">{{ $invesment_count }}</div>
                             </div>
                             <i class="feather-xl text-white-50" data-feather="credit-card"></i>
                         </div>
@@ -27,7 +27,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="mr-3">
                                 <div class="text-white-75 small">Total Amount</div>
-                                <div class="text-lg font-weight-bold">$480,400.00</div>
+                                <div class="text-lg font-weight-bold">$ {{ number_format($investment_payments, 2, '.', ',') }}</div>
                             </div>
                             <i class="feather-xl text-white-50" data-feather="check-square"></i>
                         </div>
@@ -66,24 +66,24 @@
                             </tr>
                         </tfoot>
                         <tbody>
-                            @foreach([1,2,3,4,5,3,1] as $val)
+                            @foreach($investors as $investor)
                                 <tr>
                                     <td>
-                                        {{ now()->format('m/d/Y @ H:m A') }}
+                                        {{ $investor->created_at->format('m/d/Y @ g:i A')  }}
                                     </td>
                                     <td>
-                                        <a href="/investor/1">Benjamin Bit</a>
+                                        <a href="/investor/1">{{ $investor->first_name . ' ' . $investor->last_name }}</a>
                                     </td>
                                     <td>
-                                        ${{ Arr::random(['1,000', '3,000', '45,000','400']) }}
+                                        ${{ $investor->investmentValues->amount }}
                                     </td>
                                     <td>
                                         <div class='progress'>
-                                            <div class='progress-bar bg-primary' role='progressbar' style='width: 60%' aria-valuenow='0' aria-valuemin='0' aria-valuemax='100'>60%</div>
+                                            <div class='progress-bar bg-success' role='progressbar' style='width: 100%' aria-valuenow='0' aria-valuemin='0' aria-valuemax='100'>100%</div>
                                         </div>
                                     </td>
                                     <td>
-                                        {{ Arr::random(['Issuer Amin Final Review', 'Payment Failed - Follow Up', 'Payment Pending - Final Review','Submitted for Clearing']) }}
+                                        {{ 'Payment Settled' }}
                                     </td>
                                     <td>
                                         <button class='btn btn-datatable btn-icon btn-transparent-dark mr-2'><i data-feather='more-vertical'></i></button>
@@ -97,4 +97,4 @@
             </div>
         </div>
     </div>
-</x-default-layout>
+</div>
