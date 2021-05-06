@@ -102,13 +102,13 @@
                             </tr>
                         </tfoot>
                         <tbody>
-                            @foreach([1,2,3,4,5,3,1] as $val)
+                            @foreach($investors as $investor)
                                 <tr>
                                     <td>
-                                        {{ now()->format('m/d/Y @ H:m A') }}
+                                        {{ $investor->created_at->format('m/d/Y @ g:i A')  }}
                                     </td>
                                     <td>
-                                        <a href="/investor/1">Benjamin Bit</a>
+                                        <a href="/investor/1">{{ $investor->first_name . ' ' . $investor->last_name }}</a>
                                     </td>
                                     <td>
                                         <div class='badge badge-warning badge-pill'>Pending</div>
