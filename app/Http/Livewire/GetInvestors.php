@@ -21,7 +21,6 @@ class GetInvestors extends Component
 
     public function render()
     {
-        return view('kyc-aml-verification')
-            ->layout('layouts.guest');
+        return view('kyc-aml-verification')->layout('layouts.guest');
     }
 }
