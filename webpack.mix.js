@@ -13,7 +13,14 @@ const tailwindcss = require('tailwindcss');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .js('resources/js/scripts.js', 'public/js')
+    .js('resources/assets/demo/chart-area-demo.js', 'public/assets/demo')
+    .js('resources/assets/demo/chart-bar-demo.js', 'public/assets/demo')
+    .js('resources/assets/demo/datatables-demo.js', 'public/assets/demo')
+    .js('resources/assets/demo/date-range-picker-demo.js', 'public/assets/demo')
     .sass('resources/sass/app.scss', 'public/css')
+    .css('resources/css/styles.css', 'public/css')
+    .css('resources/css/custom.css', 'public/css')
     .copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts')
     .options({
         processCssUrls: false,

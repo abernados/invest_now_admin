@@ -1,38 +1,42 @@
-@font-face {
-    font-family: 'Rockwell';
-    src: url('../assets/fonts/rockwell-regular.TTF') format("truetype");
-    font-weight: 400;
-}
+// @font-face {
+//     font-family: 'Rockwell';
+//     src: url('../assets/fonts/rockwell-regular.TTF') format("truetype");
+//     font-weight: 400;
+// }
 
-@font-face {
-    font-family: 'Rockwell';
-    src: url('../assets/fonts/rockwell-bold.ttf') format("truetype");
-    font-weight: 700;
-}
+// @font-face {
+//     font-family: 'Rockwell';
+//     src: url('../assets/fonts/rockwell-bold.ttf') format("truetype");
+//     font-weight: 700;
+// }
 
-@font-face {
-    font-family: 'Segoe UI';
-    src: url('../assets/fonts/Segoe UI.ttf') format("truetype");
-    font-weight: 400;
-}
+// @font-face {
+//     font-family: 'Segoe UI';
+//     src: url('../assets/fonts/Segoe UI.ttf') format("truetype");
+//     font-weight: 400;
+// }
 
-@font-face {
-    font-family: 'Segoe UI';
-    src: url('../assets/fonts/Segoe UI Bold.ttf') format("truetype");
-    font-weight: 700;
-}
+// @font-face {
+//     font-family: 'Segoe UI';
+//     src: url('../assets/fonts/Segoe UI Bold.ttf') format("truetype");
+//     font-weight: 700;
+// }
 
-@font-face {
-    font-family: 'Vladimir';
-    src: url('../assets/fonts/VLADIMIR.TTF') format("truetype");
-    font-weight: 1 999;
-}
+// @font-face {
+//     font-family: 'Vladimir';
+//     src: url('../assets/fonts/VLADIMIR.TTF') format("truetype");
+//     font-weight: 1 999;
+// }
 
-@import '~@fortawesome/fontawesome-free/css/all.css';
-@import 'tailwindcss/base';
-// components and objects
-@import 'tailwindcss/components';
-@import '../css/components/c-tabs.css';
-@import '../css/components/c-input.css';
-@import '../css/components/c-progressbar.css';
-@import 'tailwindcss/utilities';
+// @import '~@fortawesome/fontawesome-free/css/all.css';
+// @import 'tailwindcss/base';
+// // components and objects
+// @import 'tailwindcss/components';
+// @import '../css/components/c-tabs.css';
+// @import '../css/components/c-input.css';
+// @import '../css/components/c-progressbar.css';
+// @import 'tailwindcss/utilities';
+
+
+@import '../css/custom.css';
+@import '../css/styles.css';

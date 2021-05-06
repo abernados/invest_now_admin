@@ -1,173 +1,264 @@
 <x-default-layout>
-    <div class="max-w-6xl mx-auto">
-        <dl class="m-10 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-4">
-            <div
-                class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_violet_dark via-custom-gradient_violet_medium to-custom-gradient_violet_light">
-                <div class="px-4 pt-2 sm:p-4">
-                    <dt class="text-md font-bold truncate pb-4">
-                        New Investors
-                    </dt>
-                    <dd class=" text-center mt-1 text-5xl">
-                        11,302
-                    </dd>
-                </div>
-            </div>
-            <div
-                class="text-white overflow-hidden shadow rounded bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light">
-                <div class="px-4 pt-2 sm:p-4">
-                    <dt class="text-md font-bold truncate pb-4">
-                        Amount Invested
-                    </dt>
-                    <dd class=" text-center mt-1 text-5xl">
-                        $239,391
-                    </dd>
-                    <dd class="text-green-500 text-center my-6 text-md">
-                        32%
-                    </dd>
-                    <dd class="grid grid-cols-2 mt-1 text-sm text-center">
-                        <div>
-                            <p class="text-lg">$550.62</p>
-                            <p>Average</p>
-                        </div>
-                        <div>
-                            <p class="text-lg">$550.62</p>
-                            <p>Medium</p>
-                        </div>
+    @section('page_title') Dashboard @endsection
+    @section('page_description') Overview of most recent investments and activities @endsection
 
-                    </dd>
-                </div>
-            </div>
-            <div class="bg-white overflow-hidden shadow rounded text-center text-gray-5 00">
-                <div class="px-4 py-2 sm:p-4">
-                    <div class="divide-y divide-gray-200">
-                        <dt class="text-md font-bold truncate">
-                            Completed Investments
-                            <p class="my-4 text-5xl font-semibold ">
-                                504
-                            </p>
-                        </dt>
-                        <dt class="text-md font-bold truncate pt-4">
-                            Pending Investments
-                            <p class="my-4 text-5xl font-semibold ">
-                                32
-                            </p>
-                        </dt>
-
+    <div class="container mt-n10">
+        <div class="row">
+            <div class="col-xxl-3 col-lg-6">
+                <div class="card bg-primary text-white mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="mr-3">
+                                <div class="text-white-75 small">New Investors</div>
+                                <div class="text-lg font-weight-bold">28</div>
+                            </div>
+                            <i class="feather-xl text-white-50" data-feather="user"></i>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white stretched-link" href="#">View Report</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                     </div>
                 </div>
             </div>
-
-            <div class="bg-white overflow-hidden shadow rounded row-span-4">
-                <div class="px-4 py-2 sm:p-4">
-                    <dt class="text-md font-bold text-gray-500 truncate">
-                        Recent Activity
-                    </dt>
-                    <dd class="mt-1 text-3xl font-semibold text-gray-900">
-                        <table class="min-w-full divide-y divide-gray-200">
-                            <tbody class="bg-white divide-y divide-gray-200">
-                                @foreach ([1, 2] as $test)
-                                    <tr class="activity-item hover:bg-gray-100">
-                                        <td class="py-4 whitespace-nowrap ">
-                                            <div class="flex items-center">
-                                                <div class="flex-shrink-0 h-10 w-10">
-                                                    <img class="h-10 w-10" src="/images/document.png" alt="">
-                                                </div>
-                                                <div class="ml-4">
-                                                    <div class="text-sm font-medium text-gray-900">
-                                                        Uploaded Document
-                                                    </div>
-                                                    <div class="text-sm text-gray-500">
-                                                        4 mins ago
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="activity-item hover:bg-gray-100">
-                                        <td class="py-4 whitespace-nowrap ">
-                                            <div class="flex items-center">
-                                                <div class="flex-shrink-0 h-10 w-10">
-                                                    <img class="h-10 w-10" src="/images/email.png" alt="">
-                                                </div>
-                                                <div class="ml-4">
-                                                    <div class="text-sm font-medium text-gray-900">
-                                                        Opened Email
-                                                    </div>
-                                                    <div class="text-sm text-gray-500">
-                                                        4 mins ago
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                @endforeach
-
-                            </tbody>
-                        </table>
-                    </dd>
-                </div>
-            </div>
-
-            <div class="bg-white overflow-hidden shadow rounded h-52">
-                <div class="px-4 py-2 sm:p-4">
-                    <dt class="text-md font-bold text-gray-500 truncate">
-                        KYC/AML
-                    </dt>
-                    <dd class="mt-1 text-3xl font-semibold text-gray-900">
-                    </dd>
-                </div>
-            </div>
-            <div class="bg-white overflow-hidden shadow rounded col-span-2 row-span-3">
-                <div class=" py-5 sm:p-6">
-                    <dt class="text-md font-bold text-gray-500 truncate">
-                        New Investors
-                    </dt>
-                    <dd class="mt-2">
-                        <livewire:get-investors />
-                    </dd>
-                </div>
-            </div>
-            <div
-                class="bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light text-white overflow-hidden shadow rounded">
-                <div class="px-4 py-2 sm:p-4">
-                    <dd class="mt-1 ">
-                        <div class="flex items-center">
-                            <div class="flex-shrink-0 w-14">
-                                <img class="w-14" src="/images/successful-kyc.png" alt="">
+            <div class="col-xxl-3 col-lg-6">
+                <div class="card bg-warning text-white mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="mr-3">
+                                <div class="text-white-75 small">Amount Invested</div>
+                                <div class="text-lg font-weight-bold"> $460,300.00</div>
                             </div>
-                            <div class="ml-4 w-full">
-                                <div class="text-sm font-medium">
-                                    Successfull KYC
-                                </div>
-                                <div class="text-sm border-b-4 border-green-500 pb-1">
-                                    Compliance Check
-                                </div>
-                            </div>
+                            <i class="feather-xl text-white-50" data-feather="dollar-sign"></i>
                         </div>
-                    </dd>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white stretched-link" href="#">View Report</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
                 </div>
             </div>
-            <div
-                class="bg-gradient-to-b from-custom-gradient_blue_dark to-custom-gradient_blue_light text-white overflow-hidden shadow rounded">
-                <div class="px-4 py-2 sm:p-4">
-                    <dd class="mt-1 ">
-                        <div class="flex items-center">
-                            <div class="flex-shrink-0 w-14">
-                                <img class="w-14" src="/images/failed-kyc.png" alt="">
+            <div class="col-xxl-3 col-lg-6">
+                <div class="card bg-success text-white mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="mr-3">
+                                <div class="text-white-75 small">Average Investment</div>
+                                <div class="text-lg font-weight-bold"> $16,439.29</div>
                             </div>
-                            <div class="ml-4 w-full">
-                                <div class="text-sm font-medium">
-                                    Failed KYC
-                                </div>
-                                <div class="text-sm border-b-4 border-red-500 pb-1">
-                                    Compliance Check
-                                </div>
-                            </div>
+                            <i class="feather-xl text-white-50" data-feather="check-square"></i>
                         </div>
-                    </dd>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white stretched-link" href="#">View Report</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
                 </div>
             </div>
-        </dl>
+            <div class="col-xxl-3 col-lg-6">
+                <div class="card bg-danger text-white mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="mr-3">
+                                <div class="text-white-75 small">Median Investment</div>
+                                <div class="text-lg font-weight-bold"> $16,439.29</div>
+                            </div>
+                            <i class="feather-xl text-white-50" data-feather="loader"></i>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white stretched-link" href="#">View Report</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">Investment Overview</div>
+            <div class="card-body">
+                <div class="datatable">
+                    <table class="table table-bordered table-hover" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th># Investors</th>
+                                <th>$ Amount</th>
+                                <th>Average</th>
+                                <th>Median</th>
+                                <th>Export</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+
+                                <td><strong>Investment Commitment</strong></td>
+                                <td><strong>28</strong></td>
+                                <td><strong>$460,300.00</strong></td>
+                                <td><strong>$16,439.29</strong></td>
+                                <td><strong>$16,439.29</strong></td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Voided</td>
+                                <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>Cancelled</td>
+                                <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>Refunded</td>
+                            <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>Rejected</td>
+                            <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>Funds not recieved</td>
+                            <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>Funds not recieved (<7 Days)</td>
+                            <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><strong>Active Investments</strong></td>
+                                <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>Funds Received</td>
+                            <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                        <td><strong>Pending Clearing</strong></td>
+                        <td><strong>0</strong></td>
+                        <td><strong>$0.00</strong></td>
+                        <td><strong>$0.00</strong></td>
+                        <td><strong>$0.00</strong></td>
+                        <td>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                        </td>
+                    </tr>
+                            <tr>
+                            <td>AML Pending</td>
+                                <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>ID Pending</td>
+                                <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>Funds Pending Clearing</td>
+                                <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>Trade Review  Pending</td>
+                                <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                        <td><strong>Cleared for Disbursment</strong></td>
+                        <td><strong>-</strong></td>
+                        <td><strong>-</strong></td>
+                        <td><strong>-</strong></td>
+                        <td><strong>-</strong></td>
+                        <td>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Issued (Official Shareholders)</strong></td>
+                        <td><strong>0</strong></td>
+                        <td><strong>$0.00</strong></td>
+                        <td><strong>$0.00</strong></td>
+                        <td><strong>$0.00</strong></td>
+                        <td>
+                            <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
+                        </td>
+                    </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 
 </x-default-layout>
