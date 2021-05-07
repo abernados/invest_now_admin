@@ -44,7 +44,7 @@ class Investor extends Model
 
     public function accreditedInvestors()
     {
-        return $this->hasMany(AccreditedInvestor::class, 'investor_id');
+        return $this->hasOne(AccreditedInvestor::class, 'investor_id');
     }
 
     public function investorDocuments()
@@ -74,7 +74,7 @@ class Investor extends Model
 
     public function additionalnfos()
     {
-        return $this->hasMany(AdditionalInfo::class, 'investor_id');
+        return $this->hasOne(AdditionalInfo::class, 'investor_id');
     }
 
     public function trustDetails()
@@ -89,6 +89,6 @@ class Investor extends Model
 
     public function cardDetails()
     {
-        return $this->hasMany(InvestorCreditCardDetail::class, 'investor_id');
+        return $this->hasOne(InvestorCreditCardDetail::class, 'investor_id');
     }
 }

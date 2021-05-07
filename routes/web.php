@@ -25,7 +25,7 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
 
-    Route::get('/investor/{id}', ShowInvestor::class);
+    Route::get('/investor/{investor_id}', ShowInvestor::class)->name('show.investor');
 
     Route::get('/todo', function () {
         return view('todo');

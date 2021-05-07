@@ -49,12 +49,12 @@
                             <!-- Form Group (first name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="LeagalFirstName">Legal First name</label>
-                                <input class="form-control" id="LeagalFirstName" type="text"/>
+                                <input class="form-control" id="LeagalFirstName" type="text" wire:model.defer="first_name"/>
                             </div>
                             <!-- Form Group (last name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputLastName">Legal Last name</label>
-                                <input class="form-control" id="inputLastName" type="text"/>
+                                <input class="form-control" id="inputLastName" type="text" wire:model.defer="last_name"/>
                             </div>
                         </div>
                         <!-- Form Row        -->
@@ -62,12 +62,12 @@
                             <!-- Form Group (organization name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputOrgName">Email Address</label>
-                                <input class="form-control" id="inputOrgName" type="text"/>
+                                <input class="form-control" id="inputOrgName" type="text" wire:model.defer="email_address"/>
                             </div>
                             <!-- Form Group (location)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputLocation">Phone Number</label>
-                                <input class="form-control" id="inputLocation" type="text"/>
+                                <input class="form-control" id="inputLocation" type="text" wire:model.defer="phone_number"/>
                             </div>
                         </div>
                         <!-- Form Group (email address)-->
@@ -77,40 +77,40 @@
                             <!-- Form Group (first name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputFirstName">Country</label>
-                                <input class="form-control" id="inputFirstName" type="text" placeholder="No Data"/>
+                                <input class="form-control" id="inputFirstName" type="text" placeholder="No Data" wire:model.defer="country"/>
                             </div>
                             <!-- Form Group (last name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputLastName">Street Address</label>
-                                <input class="form-control" id="inputLastName" type="text" placeholder="No Data" />
+                                <input class="form-control" id="inputLastName" type="text" placeholder="No Data" wire:model.defer="address" />
                             </div>
                         </div>
                         <div class="form-row">
                             <!-- Form Group (first name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputFirstName">City</label>
-                                <input class="form-control" id="inputFirstName" type="text" placeholder="No Data"/>
+                                <input class="form-control" id="inputFirstName" type="text" placeholder="No Data" wire:model.defer="city" />
                             </div>
                             <!-- Form Group (last name)-->
                             <div class="form-group col-md-3">
                                 <label class="small mb-1" for="inputLastName">State</label>
-                                <input class="form-control" id="inputLastName" type="text" placeholder="No Data"/>
+                                <input class="form-control" id="inputLastName" type="text" placeholder="No Data" wire:model.defer="state"/>
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="small mb-1" for="inputLastName">Zip</label>
-                                <input class="form-control" id="inputLastName" type="text" placeholder="No Data"/>
+                                <input class="form-control" id="inputLastName" type="text" placeholder="No Data" wire:model.defer="zip"/>
                             </div>
                         </div>
                         <div class="form-row">
                             <!-- Form Group (first name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputFirstName">Social Security Number</label>
-                                <input class="form-control" id="inputFirstName" type="password" placeholder="No Data" disabled/>
+                                <input class="form-control" id="inputFirstName" type="password" placeholder="No Data" wire:model.defer="social_security_number" disabled/>
                             </div>
                             <!-- Form Group (last name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputLastName">Date of Birth</label>
-                                <input class="form-control" id="inputLastName" type="text" placeholder="No Data"/>
+                                <input class="form-control" id="inputLastName" type="text" placeholder="No Data" wire:model.defer="date_of_birth" />
                             </div>
                         </div>
                         <hr/>
@@ -119,12 +119,12 @@
                             <!-- Form Group (first name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputFirstName">Investment Amount</label>
-                                <input class="form-control" id="inputFirstName" type="text" placeholder="No Data"/>
+                                <input class="form-control" id="inputFirstName" type="text" placeholder="No Data" wire:model.defer="investment_amount" />
                             </div>
                             <!-- Form Group (last name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputLastName">Accredited Investor?</label>
-                                <input class="form-control" id="inputLastName" type="text" placeholder="No Data"/>
+                                <input class="form-control" id="inputLastName" type="text" placeholder="No Data" wire:model.defer="accredited_investor" />
                             </div>
                         </div>
                         <div class="form-row">
@@ -136,14 +136,14 @@
                             <!-- Form Group (last name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputLastName">Annual Revenue</label>
-                                <input class="form-control" id="inputLastName" type="text" placeholder="N/A" />
+                                <input class="form-control" id="inputLastName" type="text" placeholder="N/A" wire:model.defer="annual_income"  />
                             </div>
                         </div>
                         <div class="form-row">
                             <!-- Form Group (first name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputFirstName">Net Worth</label>
-                                <input class="form-control" id="inputFirstName" type="text" placeholder="N/A" />
+                                <input class="form-control" id="inputFirstName" type="text" placeholder="N/A"  wire:model.defer="net_worth" />
                             </div>
                         </div>
                         <hr/>
@@ -152,12 +152,12 @@
                             <!-- Form Group (first name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputFirstName">Subscription Agreement</label>
-                                <input class="form-control" id="inputFirstName" type="text" placeholder="No Data"/>
+                                <input class="form-control" id="inputFirstName" type="text" placeholder="No Data" wire:model.defer="subscription_agreement"/>
                             </div>
                             <!-- Form Group (last name)-->
                             <div class="form-group col-md-6">
                                 <label class="small mb-1" for="inputLastName">Broker Dealer Agreement</label>
-                                <input class="form-control" id="inputLastName" type="text" placeholder="No Data"/>
+                                <input class="form-control" id="inputLastName" type="text" placeholder="No Data" wire:model.defer="sample_broker_dealer_aggreement"/>
                             </div>
                         </div>
                         <div class="form-row">
@@ -201,7 +201,7 @@
                 <div class="card h-100 border-left-lg border-left-primary">
                     <div class="card-body">
                         <div class="small text-muted">Latest Transaction</div>
-                        <div class="h3">$0.00</div>
+                        <div class="h3">{{ $investment_amount }}</div>
                     </div>
                 </div>
             </div>
@@ -210,7 +210,7 @@
                 <div class="card h-100 border-left-lg border-left-secondary">
                     <div class="card-body">
                         <div class="small text-muted">Transaction Totals</div>
-                        <div class="h3">$0.00</div>
+                        <div class="h3">$ {{ $investment_amount }}</div>
                     </div>
                 </div>
             </div>
@@ -236,8 +236,8 @@
                     <div class='d-flex align-items-center'>
                         <i class='fab fa-cc-visa fa-2x cc-color-visa'></i>
                         <div class='ml-4'>
-                            <div class='small'>Visa ending in 4322</div>
-                            <div class='text-xs text-muted'>Expires 11/22</div>
+                            <div class='small'>Visa ending in {{ $card_last_four_digits }}</div>
+                            <div class='text-xs text-muted'>Expires {{ $card_expiry }}</div>
                         </div>
                     </div>
                     <div class='ml-4 small'>
