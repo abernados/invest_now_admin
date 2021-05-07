@@ -72,7 +72,7 @@
                                         {{ $investor->created_at->format('m/d/Y @ g:i A')  }}
                                     </td>
                                     <td>
-                                        <a href="/investor/1">{{ $investor->first_name. ' ' . $investor->last_name}}</a>
+                                        <a href="{{ route('show.investor', $investor->id) }}">{{ $investor->first_name. ' ' . $investor->last_name}}</a>
                                     </td>
                                     <td>
                                         ${{isset($investor->investmentValues->amount) ? $investor->investmentValues->amount : 0 }}
