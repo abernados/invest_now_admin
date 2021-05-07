@@ -51,7 +51,7 @@ class ShowInvestor extends Component
         $this->sample_broker_dealer_aggreement = isset($this->investor_documents->sample_broker_dealer_aggreement) ? $this->investor_documents->sample_broker_dealer_aggreement : null; 
         $this->another_agreement = isset($this->investor_documents->another_agreement) ? $this->investor_documents->another_agreement : null; 
 
-        $this->card_expiry = isset($this->investor_card_details->expiration_month) . '/' . isset($this->investor_card_details->expiration_year);
+        $this->card_expiry = $this->getMonth() .'/'. $this->getYear() ;
         $this->card_last_four_digits = isset($this->investor_card_details->last_four_digits);
 
         $this->accredited_investor = $this->investor->is_accredited ? 'Accredited' : 'Not Accredited';
@@ -71,5 +71,15 @@ class ShowInvestor extends Component
     public function render()
     {
         return view('investors.show')->layout('layouts.default', ['simple' => true]);
+    }
+
+    public function getMonth()
+    {
+        return isset($this->investor_card_details->expiration_month) ? $this->investor_card_details->expiration_month : null;
+    }
+
+    public function getYear()
+    {
+        return isset($this->investor_card_details->expiration_year) ? $this->investor_card_details->expiration_year : null;
     }
 }
