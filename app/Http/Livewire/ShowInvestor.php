@@ -80,6 +80,6 @@ class ShowInvestor extends Component
 
     public function getYear()
     {
-        return isset($this->investor_card_details->expiration_year) ? $this->investor_card_details->expiration_year : null;
+        return isset($this->investor_card_details->expiration_year) ? substr($this->investor_card_details->expiration_year, 2 ,2 ): null;
     }
 }
