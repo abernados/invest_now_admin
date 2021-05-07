@@ -53,6 +53,8 @@ class ShowInvestor extends Component
 
         $this->card_expiry = isset($this->investor_card_details->expiration_month) . '/' . isset($this->investor_card_details->expiration_year);
         $this->card_last_four_digits = isset($this->investor_card_details->last_four_digits);
+
+        $this->accredited_investor = $this->investor->is_accredited ? 'Accredited' : 'Not Accredited';
     }
 
     public function getInvestor($investor_id)
@@ -62,17 +64,6 @@ class ShowInvestor extends Component
 
     public function checkIfInvestorIsAccredited($investor)
     {
-        if ($investor->accreditedInvestors) {
-            $this->accredited_investor = 'Not Accredited';
-            
-            $this->annual_income = '$' . number_format( isset($investor->accreditedInvestors->annual_income) ? $investor->accreditedInvestors->annual_income : 0 , 2, '.', ',');
-            $this->net_worth = '$' . number_format(isset($investor->accreditedInvestors->annual_income) ? $investor->accreditedInvestors->annual_income : 0, 2, '.', ',');
-
-            return;
-        }
-
-        $this->accredited_investor = 'Accredited';
-
         $this->annual_income = '$' . number_format(isset($investor->additionalnfos->annual_income) ? $investor->additionalnfos->annual_income :0 , 2, '.', ',');
         $this->net_worth = '$' . number_format(isset($investor->additionalnfos->annual_income) ? $investor->additionalnfos->annual_income : 0, 2, '.', ',');
     }
