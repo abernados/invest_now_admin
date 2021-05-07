@@ -32,27 +32,27 @@ class ShowInvestor extends Component
 
         $this->investor_card_details = $this->investor->cardDetails;
 
-        $this->first_name = $this->ifNull($this->investor->first_name);
-        $this->last_name = $this->ifNull($this->investor->last_name);
-        $this->email_address = $this->ifNull($this->investor->email);
+        $this->first_name = isset($this->investor->first_name) ?  $this->investor->first_name : null;
+        $this->last_name = isset($this->investor->last_name) ?  $this->investor->last_name : null;
+        $this->email_address = isset($this->investor->email) ?  $this->investor->email : null;
 
-        $this->phone_number = $this->ifNull($this->investor_address_info->phone_number);
-        $this->country = $this->ifNull($this->investor_address_info->country);
-        $this->address = $this->ifNull($this->investor_address_info->address);
-        $this->city = $this->ifNull($this->investor_address_info->city);
-        $this->state = $this->ifNull($this->investor_address_info->state);
-        $this->zip = $this->ifNull($this->investor_address_info->zip);
+        $this->phone_number = isset($this->investor_address_info->phone_number) ?  $this->investor_address_info->phone_number : null;
+        $this->country = isset($this->investor_address_info->country) ?  $this->investor_address_info->country : null;
+        $this->address = isset($this->investor_address_info->address)  ?  $this->investor_address_info->address : null;
+        $this->city = isset($this->investor_address_info->city) ?  $this->investor_address_info->city : null;
+        $this->state = isset($this->investor_address_info->state) ? $this->investor_address_info->state : null;
+        $this->zip = isset($this->investor_address_info->zip) ? $this->investor_address_info->zip : null;
 
-        $this->social_security_number = $this->ifNull($this->investor_requirements->social_security_number);
+        $this->social_security_number = isset($this->investor_requirements->social_security_number) ? $this->investor_requirements->social_security_number : null;
         $this->date_of_birth = isset($this->investor_requirements->date_of_birth) ? Carbon::parse($this->investor_requirements->date_of_birth)->format('M d, Y') : null;
-        $this->investment_amount =  '$' . number_format($this->ifNull($this->investor_investment_values->amount), 2, '.', ',');
+        $this->investment_amount =  '$' . number_format(isset($this->investor_investment_values->amount) ? $this->investor_investment_values->amount : 0, 2, '.', ',');
 
         $this->subscription_agreement = isset($this->investor_documents->subscription_agreement) ? $this->investor_documents->subscription_agreement : null; 
         $this->sample_broker_dealer_aggreement = isset($this->investor_documents->sample_broker_dealer_aggreement) ? $this->investor_documents->sample_broker_dealer_aggreement : null; 
         $this->another_agreement = isset($this->investor_documents->another_agreement) ? $this->investor_documents->another_agreement : null; 
 
-        $this->card_expiry = $this->ifNull($this->investor_card_details->expiration_month) . '/' . $this->ifNull($this->investor_card_details->expiration_year);
-        $this->card_last_four_digits = $this->ifNull($this->investor_card_details->last_four_digits);
+        $this->card_expiry = isset($this->investor_card_details->expiration_month) . '/' . isset($this->investor_card_details->expiration_year);
+        $this->card_last_four_digits = isset($this->investor_card_details->last_four_digits);
     }
 
     public function getInvestor($investor_id)
@@ -80,10 +80,5 @@ class ShowInvestor extends Component
     public function render()
     {
         return view('investors.show')->layout('layouts.default', ['simple' => true]);
-    }
-
-    private function ifNull($detail)
-    {
-        return isset($detail) ? $detail : null;
     }
 }
