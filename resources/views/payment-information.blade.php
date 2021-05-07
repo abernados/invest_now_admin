@@ -72,10 +72,10 @@
                                         {{ $investor->created_at->format('m/d/Y @ g:i A')  }}
                                     </td>
                                     <td>
-                                        <a href="/investor/1">{{ $investor->first_name . ' ' . $investor->last_name }}</a>
+                                        <a href="/investor/1">{{ $investor->first_name ?? null . ' ' . $investor->last_name ?? null }}</a>
                                     </td>
                                     <td>
-                                        ${{ $investor->investmentValues->amount }}
+                                        ${{ numer_format(isset($investor->investmentValues->amount) ? $investor->investmentValues->amount : 0, 2 '.', ',') }}
                                     </td>
                                     <td>
                                         <div class='progress'>
