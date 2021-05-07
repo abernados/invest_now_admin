@@ -1,4 +1,4 @@
-<x-default-layout>
+<div>
     @section('page_title') Dashboard @endsection
     @section('page_description') Overview of most recent investments and activities @endsection
 
@@ -10,7 +10,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="mr-3">
                                 <div class="text-white-75 small">New Investors</div>
-                                <div class="text-lg font-weight-bold">28</div>
+                                <div class="text-lg font-weight-bold">{{ $investor_count }}</div>
                             </div>
                             <i class="feather-xl text-white-50" data-feather="user"></i>
                         </div>
@@ -27,7 +27,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="mr-3">
                                 <div class="text-white-75 small">Amount Invested</div>
-                                <div class="text-lg font-weight-bold"> $460,300.00</div>
+                                <div class="text-lg font-weight-bold"> ${{ number_format($total_invesments, 2 , '.', ',') }}</div>
                             </div>
                             <i class="feather-xl text-white-50" data-feather="dollar-sign"></i>
                         </div>
@@ -44,7 +44,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="mr-3">
                                 <div class="text-white-75 small">Average Investment</div>
-                                <div class="text-lg font-weight-bold"> $16,439.29</div>
+                                <div class="text-lg font-weight-bold"> ${{ number_format($average_investments, 2 , '.', ',') }}</div>
                             </div>
                             <i class="feather-xl text-white-50" data-feather="check-square"></i>
                         </div>
@@ -94,9 +94,9 @@
                         <tr>
 
                                 <td><strong>Investment Commitment</strong></td>
-                                <td><strong>28</strong></td>
-                                <td><strong>$460,300.00</strong></td>
-                                <td><strong>$16,439.29</strong></td>
+                                <td><strong>{{ $investor_count }}</strong></td>
+                                <td><strong>${{ number_format($total_invesments, 2 , '.', ',') }}</strong></td>
+                                <td><strong>${{ number_format($average_investments, 2 , '.', ',') }}</strong></td>
                                 <td><strong>$16,439.29</strong></td>
                                 <td>
                                     <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="download"></i></button>
@@ -261,4 +261,4 @@
         </div>
     </div>
 
-</x-default-layout>
+</div>

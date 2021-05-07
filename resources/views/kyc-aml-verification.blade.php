@@ -117,18 +117,10 @@
                                         <div class='badge badge-warning badge-pill'>Pending</div>
                                     </td>
                                     <td>
-                                        @if($loop->even)
-                                            {{ Arr::random(['Passed Verification Check', 'KYC Verification in Progress - Follow Up', 'Passed Verification Check']) }}
-                                        @else
-                                            {{ Arr::random(['Address does not match', 'Unable to confirm SSN']) }}
-                                        @endif
+                                        Pending Verification
                                     </td>
                                     <td>
-                                        @if($loop->even)
-                                          {{ Arr::random(['Passed Verification Check', 'ID Pending', 'Passed Verification Check']) }}
-                                        @else
-                                            {{ Arr::random(['AML failed to run', 'Unable to confirm SSN']) }}
-                                        @endif
+                                        Pending Check	
                                     </td>
                                     <td>
                                         <button class="btn btn-datatable btn-icon btn-transparent-dark mr-2"><i data-feather="eye-off"></i></button>

@@ -18,11 +18,11 @@
                     Incomplete Investments
                 </a>
                 <a class="nav-link" href="{{ route('investment-details') }}">
-                    <div class="nav-link-icon"><i data-feather="list"></i></div>
-                    Payments Pending
+                    <div class="nav-link-icon"><i data-feather="dollar-sign"></i></div>
+                    Payments Status
                 </a>
                 <a class="nav-link" href="{{ route('payment-information') }}">
-                    <div class="nav-link-icon"><i data-feather="dollar-sign"></i></div>
+                    <div class="nav-link-icon"><i data-feather="list"></i></div>
                     Complete Investments
                 </a>
                 <a class="nav-link" href="{{ route('kyc-aml-verification') }}">

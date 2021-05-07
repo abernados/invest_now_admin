@@ -1,9 +1,9 @@
 <?php
 
 use App\Http\Controllers\InvestorController;
+use App\Http\Livewire\Dashboard;
 use App\Http\Livewire\GetInvestors;
 use App\Http\Livewire\PaymentInformation;
-use Illuminate\Auth\Events\Verified;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,9 +22,7 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('index');
-    })->name('dashboard');
+    Route::get('/dashboard', Dashboard::class)->name('dashboard');
 
     Route::get('/investor/{id}', [InvestorController::class, 'show']);
 
