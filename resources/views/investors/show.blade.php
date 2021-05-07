@@ -264,9 +264,9 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>#39201</td>
-                                <td>Apr 03, 2021</td>
-                                <td>$12,213.00</td>
+                                <td>#{{ Str::upper(Str::random(7)) . mt_rand(100000, 999999) }}</td>
+                                <td>{{ $investor->created_at->format('m/d/Y @ g:i A') }}</td>
+                                <td>{{ $investment_amount }}</td>
                                 <td><span class='badge badge-success'>Success</span></td>
                             </tr>
                         </tbody>
