@@ -34,7 +34,11 @@ class Dashboard extends Component
 
     public function getAverageInvesments()
     {
-        return $this->investors->map->investmentValues->sum('amount') / $this->investors->map->investmentValues->count();;
+        if($this->investors->map->investmentValues->count() > 0){
+            return $this->investors->map->investmentValues->sum('amount') / $this->investors->map->investmentValues->count();
+        }
+
+        return 0;
     }
 
     public function render()

@@ -10,7 +10,7 @@ class ShowInvestor extends Component
 
     public function render()
     {
-        return view('livewire.show-investor');
+        return view('investors.show')->layout('layouts.default', ['simple' => true]);
     }
 
 

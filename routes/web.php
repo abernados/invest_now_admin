@@ -4,6 +4,7 @@ use App\Http\Controllers\InvestorController;
 use App\Http\Livewire\Dashboard;
 use App\Http\Livewire\GetInvestors;
 use App\Http\Livewire\PaymentInformation;
+use App\Http\Livewire\ShowInvestor;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,7 +25,7 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
 
-    Route::get('/investor/{id}', [InvestorController::class, 'show']);
+    Route::get('/investor/{id}', ShowInvestor::class);
 
     Route::get('/todo', function () {
         return view('todo');

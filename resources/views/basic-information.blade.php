@@ -1,4 +1,4 @@
-<x-default-layout>
+<x-default-layout simple="true">
     @section('page_title') Incomplete Investments @endsection
     @section('page_description') Below is an overview of the most recent investors who started an application but didn't provide payment information.@endsection
 

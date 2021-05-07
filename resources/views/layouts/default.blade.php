@@ -66,28 +66,46 @@
         @include('layouts.sidebar')
         <div id="layoutSidenav_content">
             <main>
-                <header class="page-header page-header-dark bg-gradient-primary-to-secondary {{ request()->is('todo*')  != 1 ? 'pb-10' : '' }} ">
-                    <div class="container">
-                        <div class="page-header-content pt-4">
-                            <div class="row align-items-center justify-content-between">
-                                <div class="col-auto mt-4">
-                                    <h1 class="page-header-title">
-                                        <div class="page-header-icon"><i data-feather="activity"></i></div>
-                                        @yield('page_title')
-                                    </h1>
-                                    <div class="page-header-subtitle">@yield('page_description')</div>
-                                </div>
-                                <div class="col-12 col-xl-auto mt-4">
-                                    <button class="btn btn-white btn-sm line-height-normal p-3" id="reportrange">
-                                        <i class="mr-2 text-primary" data-feather="calendar"></i>
-                                        <span></span>
-                                        <i class="ml-1" data-feather="chevron-down"></i>
-                                    </button>
+                @if ($simple ?? null)
+                    <header class="page-header page-header-compact page-header-light border-bottom bg-white mb-4">
+                        <div class="container-fluid">
+                            <div class="page-header-content">
+                                <div class="row align-items-center justify-content-between pt-3">
+                                    <div class="col-auto mb-3">
+                                        <h1 class="page-header-title">
+                                            <div class="page-header-icon"><i data-feather="user"></i></div>
+                                            @yield('page_title') @yield('page_subtitle')
+                                        </h1>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </header>
+                    </header>
+                @else
+                    <header class="page-header page-header-dark bg-gradient-primary-to-secondary {{ request()->is('todo*')  != 1 ? 'pb-10' : '' }} ">
+                        <div class="container">
+                            <div class="page-header-content pt-4">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-auto mt-4">
+                                        <h1 class="page-header-title">
+                                            <div class="page-header-icon"><i data-feather="activity"></i></div>
+                                            @yield('page_title')
+                                        </h1>
+                                        <div class="page-header-subtitle">@yield('page_description')</div>
+                                    </div>
+                                    <div class="col-12 col-xl-auto mt-4">
+                                        <button class="btn btn-white btn-sm line-height-normal p-3" id="reportrange">
+                                            <i class="mr-2 text-primary" data-feather="calendar"></i>
+                                            <span></span>
+                                            <i class="ml-1" data-feather="chevron-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                @endif
+
                 <!-- Main page content-->
                 {{ $slot }}
             </main>
